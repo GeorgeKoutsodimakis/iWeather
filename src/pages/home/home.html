@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      iWeather
+      myWeatherApp
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -25,6 +25,15 @@
           <strong>Temp:</strong>{{weather.temperature_string}}
         </ion-item>
         <ion-item>
+          <strong>Feels like:</strong>{{weather.feelslike_c}}&deg;
+        </ion-item>
+        <ion-item>
+          <strong>Wind direction:</strong>{{weather.wind_dir}}
+        </ion-item>
+        <ion-item>
+          <strong>Wind speed:</strong>{{weather.wind_kph}}kph
+        </ion-item>
+        <ion-item>
           <strong>Relative Humdity:</strong>{{weather.relative_humidity}}
         </ion-item>
         <ion-item>
@@ -35,6 +44,9 @@
         </ion-item>
         <ion-item>
           <strong>Heat Index:</strong>{{weather.heat_index_string}}
+        </ion-item>
+        <ion-item>
+          <strong>UV Index:</strong>{{weather.UV}}
         </ion-item>
       </ion-list>
     </ion-col>

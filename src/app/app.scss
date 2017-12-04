@@ -1,11 +1,14 @@
 .home{
-    background:color($colors, primary);
-    color:color($colors, light);
     margin-top:30px;
 }
 
+.toolbar-background-md {
+    border-color: #b2b2b2;
+    background: color($colors,light);
+  }
 .toolbar-title{
     text-align: center;
+    color:color($colors,dark);
 }
 
 .tabs-md .tab-button-icon{
@@ -32,4 +35,31 @@
 
 .desc{
     font-size:30px;
+}
+
+.about,
+.settings{
+  background:color($colors, light);
+}
+.home .item-md,
+.about .item-md,
+.settings .item-md{
+  background-color:color($colors, dark);
+}
+.temp h1{
+  font-size:15px;
+}
+
+.tabs-md .tabbar {
+    background: color($colors, light);
+}
+
+.tabs-md .tab-button ,
+{
+  color:color($colors,dark);
+}
+
+.tabs-md .tab-button[aria-selected=true],
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+  color:color($colors,dark);
 }
